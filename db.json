@@ -1,0 +1,10 @@
+{
+    "header": {
+        "logo": "test",
+        "links": [
+            {"href": "www", "alt": "test", "link": "Link1"},
+            {"href": "www", "alt": "test", "link": "Link2"},
+            {"href": "www", "alt": "test", "link": "Link3"}
+        ]
+    }
+}
