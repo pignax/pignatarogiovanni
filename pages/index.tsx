@@ -1,16 +1,16 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from "next";
+import Head from "next/head";
 
 export async function getServerSideProps() {
-  const defaultEndpoint = 'http://localhost:4000/header'
-  const res = await fetch(defaultEndpoint)
-  const data = await res.json()
+  const defaultEndpoint = "http://localhost:4000/app";
+  const res = await fetch(defaultEndpoint);
+  const data = await res.json();
 
-  return { props: { data } }
+  return { props: { data } };
 }
 
 const Home: NextPage = (data) => {
-  console.log("data", data)
+  console.log("data", data);
 
   return (
     <div>
@@ -20,15 +20,11 @@ const Home: NextPage = (data) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-       main
-      </main>
+      <main>main</main>
 
-      <footer>
-        ciap
-      </footer>
+      <footer>ciap</footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
