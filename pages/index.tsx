@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/organisms/Header/Header";
+import Footer from "../components/organisms/Footer/Footer";
 import { HomeProps } from "../types/types";
 
 export async function getServerSideProps() {
@@ -11,7 +12,7 @@ export async function getServerSideProps() {
   return { props: data };
 }
 
-const Home: NextPage<HomeProps> = (data: HomeProps) => {
+const Home: NextPage<HomeProps> = (props) => {
   return (
     <>
       <Head>
@@ -20,13 +21,11 @@ const Home: NextPage<HomeProps> = (data: HomeProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header {...data.header} />
+      <Header {...props.header} />
 
-      <header></header>
+      {/* <main>main</main> */}
 
-      <main>main</main>
-
-      <footer>ciap</footer>
+      <Footer />
     </>
   );
 };
