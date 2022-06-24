@@ -8,14 +8,10 @@ export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint);
   const data = await res.json();
 
-  console.log("first", data);
-
   return { props: data };
 }
 
 const Home: NextPage<HomeProps> = (data: HomeProps) => {
-  console.log("data", data);
-
   return (
     <>
       <Head>

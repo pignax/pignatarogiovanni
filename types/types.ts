@@ -8,6 +8,5 @@ export type HeaderProps = {
 
 export type Links = {
   href: string;
-  alt: string;
-  link: string;
+  name: string;
 };

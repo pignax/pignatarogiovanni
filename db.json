@@ -4,18 +4,15 @@
             "links": [
                 {
                     "href": "www",
-                    "alt": "test",
-                    "link": "Link1"
+                    "name": "Link1"
                 },
                 {
                     "href": "www",
-                    "alt": "test",
-                    "link": "Link2"
+                    "name": "Link2"
                 },
                 {
                     "href": "www",
-                    "alt": "test",
-                    "link": "Link3"
+                    "name": "Link3"
                 }
             ]
         },
