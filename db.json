@@ -1,7 +1,6 @@
 {
     "app": {
         "header": {
-            "logo": "test",
             "links": [
                 {
                     "href": "www",
@@ -19,6 +18,9 @@
                     "link": "Link3"
                 }
             ]
+        },
+        "section": {
+            "test": "test"
         }
     }
 }
