@@ -1,16 +1,15 @@
 import { FC } from "react";
+import Logo from "../../atoms/Logo/Logo";
+import Links from "../../molecules/Links/Links";
 import { HeaderProps } from "../../../types/types";
+import styles from "./Header.module.css";
 
 const Header: FC<HeaderProps> = (props) => {
-  const links = props.links;
   return (
-    <div>
-      {links.map((link, key) => (
-        <div key={key}>
-          <a href={link.href}>{link.name}</a>
-        </div>
-      ))}
-    </div>
+    <header className={styles.header}>
+      <Logo />
+      <Links {...props} />
+    </header>
   );
 };
 

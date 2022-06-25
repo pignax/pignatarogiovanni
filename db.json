@@ -3,16 +3,16 @@
         "header": {
             "links": [
                 {
-                    "href": "www",
-                    "name": "Link1"
+                    "href": "/",
+                    "name": "Home"
                 },
                 {
-                    "href": "www",
-                    "name": "Link2"
+                    "href": "/",
+                    "name": "Blog"
                 },
                 {
-                    "href": "www",
-                    "name": "Link3"
+                    "href": "/",
+                    "name": "Contact"
                 }
             ]
         },

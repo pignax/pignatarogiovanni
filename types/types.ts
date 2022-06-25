@@ -3,10 +3,10 @@ export type HomeProps = {
 };
 
 export type HeaderProps = {
-  links: Links[];
+  links: LinkProps[];
 };
 
-export type Links = {
+export type LinkProps = {
   href: string;
   name: string;
 };
