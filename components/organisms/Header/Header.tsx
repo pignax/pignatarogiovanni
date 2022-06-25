@@ -7,7 +7,7 @@ import styles from "./Header.module.css";
 const Header: FC<HeaderProps> = (props) => {
   return (
     <header className={styles.header}>
-      <Logo />
+      <Logo {...props.logo} />
       <Links {...props} />
     </header>
   );

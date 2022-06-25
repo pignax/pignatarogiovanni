@@ -7,7 +7,12 @@ export type HomeProps = {
 };
 
 export type HeaderProps = {
+  logo: LogoProps;
   links: LinkProps[];
+};
+
+export type LogoProps = {
+  text: string;
 };
 
 export type LinksProps = {

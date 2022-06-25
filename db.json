@@ -1,6 +1,9 @@
 {
     "app": {
         "header": {
+            "logo": {
+                "text": "GP"
+            },
             "links": [
                 {
                     "href": "/",
@@ -16,8 +19,10 @@
                 }
             ]
         },
-        "section": {
-            "test": "test"
+        "home": {
+            "main": {
+                "title": "Hello, I am Giovanni Pignataro"
+            }
         }
     }
 }
