@@ -7,7 +7,7 @@ const Link: FC<LinkProps> = (link) => {
   const name = link.name;
   return (
     <div className={styles.link}>
-      <a href={href}>{name}</a>;
+      <a href={href}>{name}</a>
     </div>
   );
 };

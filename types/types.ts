@@ -6,6 +6,10 @@ export type HeaderProps = {
   links: LinkProps[];
 };
 
+export type LinksProps = {
+  links: LinkProps[];
+};
+
 export type LinkProps = {
   href: string;
   name: string;

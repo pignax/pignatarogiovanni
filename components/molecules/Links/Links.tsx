@@ -1,9 +1,9 @@
 import { FC } from "react";
 import Link from "../../atoms/Link/Link";
-import { HeaderProps } from "../../../types/types";
+import { LinksProps } from "../../../types/types";
 import styles from "./Links.module.css";
 
-const Links: FC<HeaderProps> = (props) => {
+const Links: FC<LinksProps> = (props) => {
   const links = props.links;
   return (
     <div className={styles.links}>
