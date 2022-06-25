@@ -1,3 +1,7 @@
+export type AppProps = {
+  header: HeaderProps;
+};
+
 export type HomeProps = {
   header: HeaderProps;
 };

@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Header from "../components/organisms/Header/Header";
-import Footer from "../components/organisms/Footer/Footer";
-import { HomeProps } from "../types/types";
+import Home from "../components/templates/Home/Home";
+import { AppProps } from "../types/types";
 
 export async function getServerSideProps() {
   const defaultEndpoint = "http://localhost:4000/app";
@@ -12,7 +11,7 @@ export async function getServerSideProps() {
   return { props: data };
 }
 
-const Home: NextPage<HomeProps> = (props) => {
+const App: NextPage<AppProps> = (props) => {
   return (
     <>
       <Head>
@@ -23,14 +22,9 @@ const Home: NextPage<HomeProps> = (props) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" />
       </Head>
-
-      <Header {...props.header} />
-
-      {/* <main>main</main> */}
-
-      <Footer />
+      <Home {...props} />
     </>
   );
 };
 
-export default Home;
+export default App;
