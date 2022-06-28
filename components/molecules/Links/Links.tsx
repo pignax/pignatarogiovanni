@@ -4,8 +4,7 @@ import { LinksProps } from "../../../types/types";
 import styles from "./Links.module.css";
 
 const Links: FC<LinksProps> = (props) => {
-  const links = props.link;
-
+  const links = props.links;
   return (
     <div className={styles.links}>
       {links?.map((link, key) => (

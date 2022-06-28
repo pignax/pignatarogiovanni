@@ -8,7 +8,7 @@ const Header: FC<HeaderProps> = (props) => {
   return (
     <header className={styles.header}>
       <Logo {...props.logo} />
-      <Links {...props.links} />
+      <Links links={props.links} />
     </header>
   );
 };

@@ -14,7 +14,6 @@ export async function getServerSideProps() {
 }
 
 const App: NextPage<AppProps> = (props) => {
-  console.log("props index", props);
   return (
     <>
       <Head>

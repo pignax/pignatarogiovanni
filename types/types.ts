@@ -13,15 +13,15 @@ export type MainProps = {
 
 export type HeaderProps = {
   logo: LogoProps;
-  links: LinksProps;
-};
-
-export type LinksProps = {
-  link: LinkProps[];
+  links: LinkProps[];
 };
 
 export type LogoProps = {
   text: string;
+};
+
+export type LinksProps = {
+  links: LinkProps[];
 };
 
 export type LinkProps = {
