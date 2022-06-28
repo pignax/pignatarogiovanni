@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Home from "../components/templates/Home/Home";
+import Header from "../components/organisms/Header/Header";
+import Main from "../components/templates/Main/Main";
+import Footer from "../components/organisms/Footer/Footer";
 import { AppProps } from "../types/types";
 
 export async function getServerSideProps() {
@@ -12,6 +14,7 @@ export async function getServerSideProps() {
 }
 
 const App: NextPage<AppProps> = (props) => {
+  console.log("props index", props);
   return (
     <>
       <Head>
@@ -22,7 +25,9 @@ const App: NextPage<AppProps> = (props) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" />
       </Head>
-      <Home {...props} />
+      <Header {...props.header} />
+      <Main {...props.home.main} />
+      <Footer />
     </>
   );
 };

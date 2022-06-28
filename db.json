@@ -23,6 +23,9 @@
             "main": {
                 "title": "Hello, I am Giovanni Pignataro"
             }
+        },
+        "blog": {
+            "test": "hello word"
         }
     }
 }
